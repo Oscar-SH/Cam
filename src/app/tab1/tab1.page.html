@@ -1,17 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+<ion-content color="medium" [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="dark">
+      <ion-title>
+      <center><h6><b>¡¡¡Camera!!!</b></h6></center> 
+      </ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card color="medium">
+        <ion-card-header>
+          <ion-card-subtitle>Gracias por elegir <b>PROGRAMAS S.H</b></ion-card-subtitle>
+          <ion-card-title>¡Bienvenido!</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          En está aplicación puedes hacer uso de la camara de tu dispositivo, a traves de los plugins de ionic, donde utilizamos Angular y Capacitor.
+        </ion-card-content>
+      </ion-card>
+      <ion-label color="light"><center><b>¡Solo debes dar clic en el botón de más para tomar una nueva foto!</b></center></ion-label>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<ion-content color="medium">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="dark" (click)="addPhotoToGallery()">
+      <ion-icon name="add-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+  
+  
+
